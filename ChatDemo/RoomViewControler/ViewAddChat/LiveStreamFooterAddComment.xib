@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveStreamFooterAddComment" customModule="ChatDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="addCommentView" destination="rC7-bw-EmU" id="OJS-dJ-AFI"/>
+                <outlet property="viewContainerBtnAddImg" destination="hue-gO-FOU" id="RWw-UW-56b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="734" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZK-jD-Chq">
+                    <rect key="frame" x="5" y="0.0" width="724" height="52"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-Pt-f0B">
+                            <rect key="frame" x="0.0" y="0.0" width="724" height="52"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rC7-bw-EmU" customClass="LiveStreamAddCommentView" customModule="ChatDemo" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="683" height="52"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ttypeViewUsedViewComment">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view tag="2" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hue-gO-FOU">
+                                    <rect key="frame" x="683" y="0.0" width="41" height="52"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtW-A5-9Np">
+                                            <rect key="frame" x="0.0" y="2" width="41" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="NWy-oT-N95"/>
+                                            </constraints>
+                                            <state key="normal" image="ic_photo"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="mtW-A5-9Np" secondAttribute="bottom" id="Ivb-pt-M3C"/>
+                                        <constraint firstAttribute="trailing" secondItem="mtW-A5-9Np" secondAttribute="trailing" id="MZB-BA-ivk"/>
+                                        <constraint firstItem="mtW-A5-9Np" firstAttribute="leading" secondItem="hue-gO-FOU" secondAttribute="leading" id="VyI-Ma-laT"/>
+                                        <constraint firstAttribute="width" constant="41" id="eVx-0e-bCz"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EGq-Pt-f0B" secondAttribute="bottom" id="CQw-EY-OAl"/>
+                        <constraint firstItem="EGq-Pt-f0B" firstAttribute="top" secondItem="yZK-jD-Chq" secondAttribute="top" id="MRq-Uy-bFe"/>
+                        <constraint firstItem="EGq-Pt-f0B" firstAttribute="leading" secondItem="yZK-jD-Chq" secondAttribute="leading" id="Obl-Wi-Vl1"/>
+                        <constraint firstAttribute="trailing" secondItem="EGq-Pt-f0B" secondAttribute="trailing" id="yCd-Gc-42y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yZK-jD-Chq" secondAttribute="bottom" id="1fj-ub-XYb"/>
+                <constraint firstItem="yZK-jD-Chq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AXI-fr-IH4"/>
+                <constraint firstItem="yZK-jD-Chq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="KD5-Hd-DV3"/>
+                <constraint firstAttribute="trailing" secondItem="yZK-jD-Chq" secondAttribute="trailing" constant="5" id="s4y-WV-RIu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-600" y="-205.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_photo" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
